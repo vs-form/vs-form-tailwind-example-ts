@@ -1165,6 +1165,10 @@ select {
   line-height: 1.25;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -1492,6 +1496,10 @@ select {
 
 .w-auto {
   width: auto;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-full {

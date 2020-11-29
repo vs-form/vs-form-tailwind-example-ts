@@ -2,17 +2,28 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./tailwind.out.css";
 
-// import VsForm
-import { VsForm } from "@vs-form/tailwind";
+// import VsForm and ISchema
+import { VsForm, ISchema } from "@vs-form/tailwind";
 
 // define the schema
-const schema = {
-  type: "form",
+const schema: ISchema = {
+  type: "card",
+  label: "Example",
+  // add css classes
+  classes: {
+    // css classes are grouped by categories
+    width: 'w-1/2',
+    margin: 'm-10',
+  },
   children: [
     {
       type: "input",
-      field: "text1",
-      label: "Text1",
+      placeholder: 'Name..',
+      field: "name",
+      classes: {
+        margin: 'mb-2',
+      },
+    
     },
     {
       type: "button",
@@ -27,7 +38,7 @@ const schema = {
 
 // define the values
 const values = {
-  text1: "Hello",
+  name: "Bill",
 };
 
 ReactDOM.render(
